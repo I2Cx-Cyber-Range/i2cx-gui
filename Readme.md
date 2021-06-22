@@ -52,10 +52,10 @@ ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6e50", RUN+="/sbin/mo
 
 ## In case of OpenGl issue
 ImportError: libOpenGL.so.0: cannot open shared object file: No such file or directory
-sudo apt update
-sudo apt upgrade
-sudo apt dist-upgrade
-sudo apt-get install -y libopengl0
+
+```console
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt-get install -y libopengl0
+```
 
 # I2CX on windows
 The probably easiest way to deal with libusb on Windows is to use Zadig
