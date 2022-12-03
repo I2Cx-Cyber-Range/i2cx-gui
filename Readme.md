@@ -20,7 +20,7 @@ i2cx
 ## I²Cx Cyber range can be used with OpenOCD (destination path need to adapted)
 To use I²Cx Scanner Lite with openOCD you need to add a config file (available in tools folder) 
 ```console
-wget https://github.com/I2Cx-Cyber-Range/i2cx-gui/tools/ftdi/conf_i2cx_scanner_-lite_lootus_pid.xml  -P /usr/local/share/openocd/scripts/interface/i2cx-scanner-lite.cfg
+wget https://github.com/I2Cx-Cyber-Range/i2cx-gui/blob/main/tools/openocd/i2cx-scanner-lite.cfg  -P /usr/local/share/openocd/scripts/interface/i2cx-scanner-lite.cfg
 ```
 
 ```console
@@ -41,7 +41,7 @@ flash read_bank 0 firmware.bin
 
 ## Allow I2Cx Scanner Lite to non root user and Load FTDI driver to I2CX Scanner Lite
 ```console
-wget https://github.com/I2Cx-Cyber-Range/i2cx-gui/tools/openocd/i2cx-scanner-lite.cfg -P /etc/udev/rules.d/35-i2cx-cyber-range.rules
+wget https://github.com/I2Cx-Cyber-Range/i2cx-gui/blob/main/tools/35-i2cx-cyber-range.rules -P /etc/udev/rules.d/35-i2cx-cyber-range.rules
 ```
 
 or add manually both line to a new file for example: /etc/udev/rules.d/35-i2cx-cyber-range.rules
