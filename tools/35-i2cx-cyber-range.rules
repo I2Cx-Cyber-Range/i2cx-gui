@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6E50", GROUP="plugdev"
+ACTION=="add", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6e50", RUN+="/sbin/modprobe ftdi_sio" RUN+="/bin/sh -c 'echo 0403 6e50 > /sys/bus/usb-serial/drivers/ftdi_sio/new_id'"
